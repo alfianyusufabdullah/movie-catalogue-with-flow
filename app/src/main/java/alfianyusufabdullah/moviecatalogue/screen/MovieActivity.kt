@@ -41,6 +41,6 @@ class MovieActivity : AppCompatActivity() {
     private val observeLoading = Observer<Boolean>(this::log)
 
     private fun log(message: Any){
-        Log.d("Loading", "$message")
+        Log.d(this::class.java.name, "$message")
     }
 }
