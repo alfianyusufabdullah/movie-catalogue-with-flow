@@ -34,7 +34,7 @@ class MovieActivity : AppCompatActivity() {
         movieViewModel.loading.observe(this, observeLoading)
     }
 
-    private val observeMovie = Observer<List<Movie>>(movieAdapter::submitNewMovie)
+    private val observeMovie = Observer<List<Movie>>(movieAdapter::submitNewMovies)
 
     private val observeError = Observer<String>(this::log)
 

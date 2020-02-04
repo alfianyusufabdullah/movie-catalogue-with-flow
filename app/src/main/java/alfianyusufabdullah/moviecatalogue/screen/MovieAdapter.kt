@@ -25,7 +25,7 @@ class MovieAdapter(private var movies: MutableList<Movie>) :
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) =
         holder.bind(movies[position])
 
-    fun submitNewMovie(newMovie: List<Movie>) {
+    fun submitNewMovies(newMovie: List<Movie>) {
         movies.clear()
         movies.addAll(newMovie)
 
