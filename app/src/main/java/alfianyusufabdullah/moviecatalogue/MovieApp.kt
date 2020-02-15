@@ -34,7 +34,7 @@ val movieModule = module {
     single { MovieDataSource() }
     single { Mapper() }
 
-    single { MovieRepositoryImpl(get()) }
+    single<MovieRepository> { MovieRepositoryImpl(get()) }
 
     single { MovieAdapter(mutableListOf()) }
 

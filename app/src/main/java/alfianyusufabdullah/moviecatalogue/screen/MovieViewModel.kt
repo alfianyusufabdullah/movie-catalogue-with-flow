@@ -2,6 +2,7 @@ package alfianyusufabdullah.moviecatalogue.screen
 
 import alfianyusufabdullah.moviecatalogue.common.Mapper
 import alfianyusufabdullah.moviecatalogue.common.ScreenType
+import alfianyusufabdullah.moviecatalogue.data.repository.MovieRepository
 import alfianyusufabdullah.moviecatalogue.data.repository.MovieRepositoryImpl
 import alfianyusufabdullah.moviecatalogue.entity.Movie
 import androidx.lifecycle.LiveData
@@ -15,7 +16,7 @@ import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
 @ExperimentalCoroutinesApi
-class MovieViewModel(private val repository: MovieRepositoryImpl, private val mapper: Mapper) :
+class MovieViewModel(private val repository: MovieRepository, private val mapper: Mapper) :
     ViewModel() {
 
     private val _movies = MutableLiveData<List<Movie>>()
