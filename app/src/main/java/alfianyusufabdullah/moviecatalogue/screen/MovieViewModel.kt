@@ -3,15 +3,12 @@ package alfianyusufabdullah.moviecatalogue.screen
 import alfianyusufabdullah.moviecatalogue.common.Mapper
 import alfianyusufabdullah.moviecatalogue.common.ScreenType
 import alfianyusufabdullah.moviecatalogue.data.repository.MovieRepository
-import alfianyusufabdullah.moviecatalogue.data.repository.MovieRepositoryImpl
 import alfianyusufabdullah.moviecatalogue.entity.Movie
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
